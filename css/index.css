@@ -1,0 +1,317 @@
+@charset "UTF-8";
+body {
+  color: #808080;
+}
+
+body a {
+  color: inherit;
+}
+
+/* 头部导航 */
+.wjs_nav {
+  border-bottom: 1px solid #000;
+}
+
+.wjs_nav .row > div {
+  height: 40px;
+  border-right: 1px solid #000;
+  line-height: 40px;
+  text-align: center;
+}
+
+.wjs_nav .row div:first-child a {
+  position: relative;
+}
+
+.wjs_nav .row div:first-child a .ewm {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.wjs_nav .row div:first-child a:hover .ewm {
+  display: block;
+}
+
+.wjs_nav .row div:last-child {
+  border-right: none;
+}
+
+/* 头部工具栏 */
+#wjs_tool nav {
+  margin-bottom: 0;
+}
+
+#wjs_tool .wjsfont {
+  font-size: 70px;
+  padding-top: 5px;
+}
+
+#wjs_tool .wjsfont-logo {
+  color: red;
+}
+
+#wjs_tool a {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 80px;
+  line-height: 80px;
+}
+
+#wjs_tool a:focus {
+  border-bottom: 1px solid red;
+}
+
+#wjs_tool .navbar-toggle {
+  margin-top: 23px;
+  margin-bottom: 22px;
+}
+
+/* 轮播图 */
+.wjs_slides img {
+  width: 100%;
+}
+
+/* 支付 */
+.wjs_pay {
+  padding: 40px 0 20px;
+}
+
+.wjs_pay a:hover {
+  color: red;
+}
+
+.wjs_pay a .media {
+  padding-bottom: 20px;
+}
+
+.wjs_pay a .media .media-left .wjsfont {
+  font-size: 40px;
+}
+
+.wjs_pay a .media .media-body h4 {
+  font-size: 22px;
+}
+
+/* 排队 */
+.wjs_waiting {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.wjs_waiting .container {
+  height: 80px;
+  line-height: 80px;
+  padding-left: 60px;
+  padding-right: 50px;
+  font-size: 15px;
+  color: #333;
+}
+
+.wjs_waiting .container .wait_left {
+  float: left;
+}
+
+.wjs_waiting .container .wait_left a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+
+.wjs_waiting .container .wait_right {
+  float: right;
+}
+
+/* 微投资 */
+.wjs_buy {
+  /* 灰色卡片 */
+  /* 体验 */
+  /* 进度条 */
+}
+
+.wjs_buy .row {
+  padding: 0 10px;
+}
+
+.wjs_buy .card_default {
+  -webkit-box-shadow: 0 0 4px 4px #ccc;
+          box-shadow: 0 0 4px 4px #ccc;
+  display: block;
+}
+
+.wjs_buy .card_default:hover {
+  color: #808080;
+}
+
+.wjs_buy .card_default .card {
+  height: 180px;
+  position: relative;
+  padding-right: 80px;
+  background-color: #F7F7F7;
+  margin-top: 20px;
+}
+
+.wjs_buy .card_default .card .card_main {
+  height: 100%;
+  border-right: 1px dashed #333;
+  padding: 5px;
+  padding-top: 20px;
+}
+
+.wjs_buy .card_default .card .card_main .card_left {
+  float: left;
+}
+
+.wjs_buy .card_default .card .card_main .card_right {
+  float: right;
+}
+
+.wjs_buy .card_default .card .card_rate {
+  padding-top: 60px;
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  text-align: center;
+}
+
+.wjs_buy .card_default .card .card_rate:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  -webkit-box-shadow: 0 2px 0 0 #ccc;
+          box-shadow: 0 2px 0 0 #ccc;
+}
+
+.wjs_buy .card_default .card .card_rate:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+  -webkit-box-shadow: 0 -2px 0 0 #ccc;
+          box-shadow: 0 -2px 0 0 #ccc;
+}
+
+.wjs_buy .card_exp {
+  position: relative;
+}
+
+.wjs_buy .card_exp:hover {
+  color: #fff;
+}
+
+.wjs_buy .card_exp span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  color: #fff;
+  z-index: 10;
+}
+
+.wjs_buy .card_exp .card {
+  background-color: red;
+  color: #fff;
+}
+
+.wjs_buy .card_exp .card .card_main {
+  border-right: 1px dashed #fff;
+}
+
+.wjs_buy .card_progress .card_main .card_left {
+  width: 50%;
+}
+
+.wjs_buy .card_progress .card_main .card_right {
+  width: 50%;
+}
+
+.wjs_buy .card_progress .card_rate .tips span:first-child {
+  color: green;
+  border: 1px solid green;
+}
+
+.wjs_buy .card_progress .card_rate .tips span:nth-of-type(2) {
+  color: red;
+  border: 1px solid red;
+}
+
+/* 新闻 */
+.wjs_news {
+  margin-top: 20px;
+}
+
+.wjs_news .row .all_news {
+  font-size: 25px;
+  color: #333;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.wjs_news .row .all_news::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  bottom: -5px;
+}
+
+.wjs_news .row .news_title {
+  position: relative;
+}
+
+.wjs_news .row .news_title ul {
+  list-style: none;
+  color: #fff;
+}
+
+.wjs_news .row .news_title ul li {
+  margin-bottom: 60px;
+}
+
+.wjs_news .row .news_title ul a {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.wjs_news .row .news_title ul a .wjsfont {
+  font-size: 50px;
+}
+
+.wjs_news .row .news_title ul a:hover, .wjs_news .row .news_title ul a:focus {
+  background-color: red;
+  color: #fff;
+}
+
+.wjs_news .row .news_title .line {
+  position: absolute;
+  top: 0;
+  left: 77px;
+  width: 0;
+  border-left: 1px dashed #000;
+  height: 460px;
+}
+
+.wjs_news .row .news_content li {
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */
